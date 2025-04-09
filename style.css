@@ -54,30 +54,143 @@
 
     .sobre{
         display: flex;
+
+        article{
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          width: 90%;
+          margin: 0 24px;
+          text-align: center;
+
+          p {
+            color: #5f5f5f;
+          }
+  
+          .fas{
+              font-size: 60px;
+          }
+  
+          .fa-shield-alt {
+              color: #2cc76a;
+            }
+            
+            .fa-rocket {
+              color: #ef3f29;
+            }
+            
+            .fa-comments {
+              color: #ef8f29;
+            }
+      }
     }
 
-    article{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        width: 90%;
-        margin: 0 24px;
-        text-align: center;
+    .planos-precos {
+      display: flex;
+      flex-direction: column;
 
-        .fas{
-            font-size: 60px;
+      .lista-planos{
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        border: 1px solid red;
+      }
+
+      h2 {
+        margin: auto;
+      }
+
+      p {
+        margin: auto;
+        color: #5f5f5f;
+      }
+
+      .conteudo-plano{
+        list-style: none;
+        background: #f0f0f0;
+
+        #valor-plano1{
+          position: relative;
+          /*não vai adiantar, será necessario colocar o position absolute e posicionar cada um de forma individual*/
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          width: 100px;
+          height: 100px;
+          border: 1px solid red;
+          border-radius: 100%;
+          background: #2cc76a;
+
+          p {
+            margin: auto;
+            color: white;
+            
+          }
         }
 
-        .fa-shield-alt {
-            color: #2cc76a;
+        #valor-plano2{
+          position: relative;
+          /*não vai adiantar, será necessario colocar o position absolute e posicionar cada um de forma individual*/
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          width: 100px;
+          height: 100px;
+          border: 1px solid red;
+          border-radius: 100%;
+          background: #2cc76a;
+
+          p {
+            margin: auto;
+            color: white;
+            
           }
-          
-          .fa-rocket {
-            color: #ef3f29;
+        }
+
+        #valor-plano3{
+          position: relative;
+          /*não vai adiantar, será necessario colocar o position absolute e posicionar cada um de forma individual*/
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          width: 100px;
+          height: 100px;
+          border: 1px solid red;
+          border-radius: 100%;
+          background: #2cc76a;
+
+          p {
+            margin: auto;
+            color: white;
+            
           }
-          
-          .fa-comments {
-            color: #ef8f29;
+        }
+
+        #valor-plano4{
+          position: relative;
+          /*não vai adiantar, será necessario colocar o position absolute e posicionar cada um de forma individual*/
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          width: 100px;
+          height: 100px;
+          border: 1px solid red;
+          border-radius: 100%;
+          background: #2cc76a;
+
+          p {
+            margin: auto;
+            color: white;
+            
           }
+        }
+
+        .titulo-plano{
+          background: #232a31;
+          padding-top: 25%;
+        }
+      }
+
+      
     }
   }
