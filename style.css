@@ -50,8 +50,11 @@
   }
 
   main {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
     margin: 48px 48px;
-
+    
     .sobre{
         display: flex;
 
@@ -93,7 +96,7 @@
         display: flex;
         gap: 24px;
         justify-content: center;
-        border: 1px solid red;
+        
       }
 
       h2 {
@@ -105,89 +108,61 @@
         color: #5f5f5f;
       }
 
+      .planos{
+        flex: 1;
+      }
+
       .conteudo-plano{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         list-style: none;
-        background: #f0f0f0;
-
-        #valor-plano1{
-          position: relative;
-          /*não vai adiantar, será necessario colocar o position absolute e posicionar cada um de forma individual*/
-          left: 50%;
-          transform: translateX(-50%);
+        
+        
+        .preco-plano{
           display: flex;
-          width: 100px;
-          height: 100px;
-          border: 1px solid red;
-          border-radius: 100%;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 150px;
           background: #2cc76a;
-
-          p {
-            margin: auto;
-            color: white;
-            
-          }
-        }
-
-        #valor-plano2{
+          color: white;
+          border-radius: 100%;
+          top: 70px;
           position: relative;
-          /*não vai adiantar, será necessario colocar o position absolute e posicionar cada um de forma individual*/
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          width: 100px;
-          height: 100px;
-          border: 1px solid red;
-          border-radius: 100%;
-          background: #2cc76a;
-
-          p {
-            margin: auto;
-            color: white;
-            
-          }
-        }
-
-        #valor-plano3{
-          position: relative;
-          /*não vai adiantar, será necessario colocar o position absolute e posicionar cada um de forma individual*/
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          width: 100px;
-          height: 100px;
-          border: 1px solid red;
-          border-radius: 100%;
-          background: #2cc76a;
-
-          p {
-            margin: auto;
-            color: white;
-            
-          }
-        }
-
-        #valor-plano4{
-          position: relative;
-          /*não vai adiantar, será necessario colocar o position absolute e posicionar cada um de forma individual*/
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          width: 100px;
-          height: 100px;
-          border: 1px solid red;
-          border-radius: 100%;
-          background: #2cc76a;
-
-          p {
-            margin: auto;
-            color: white;
-            
-          }
         }
 
         .titulo-plano{
-          background: #232a31;
-          padding-top: 25%;
+          line-height: 120px;
+          padding-top: 50px;
+          width: 100%;
+          height: 150px;
+          background: #202b34;
+          color: white;
+          font-weight: 700;
+        }
+
+        .preco-dedicado{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 150px;
+          background: #ef3f29;
+          color: white;
+          border-radius: 100%;
+          top: 70px;
+          position: relative;
+        }
+        
+        li{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          width: 100%;
+          height: 50px;
+          background: #f0f0f0;
         }
       }
 
