@@ -15,7 +15,7 @@ header {
 
     img {
       margin: auto 0px;
-      width: 35px;
+      width: 32px;
     }
 
     ul {
@@ -34,12 +34,8 @@ header {
       color: #fff;
       cursor: pointer;
       border-radius: 6px;
-      opacity: 0.8;
     }
-    
-    .botao-entrar:hover{
-      opacity: 1;
-    }
+
   }
 
   .banner {
@@ -83,8 +79,8 @@ main {
       margin: 0 24px;
       text-align: center;
 
-      h3{
-        color:#232a31;
+      h3 {
+        color: #232a31;
       }
 
       p {
@@ -122,7 +118,7 @@ main {
     }
 
     h2 {
-      color:#232a31;
+      color: #232a31;
       margin: auto;
     }
 
@@ -251,12 +247,12 @@ main {
     padding: 0 48px;
     text-align: center;
 
-    h2{
+    h2 {
       font-size: 32px;
-      color:#232a31;
+      color: #232a31;
     }
 
-    p{
+    p {
       color: #5f5f5f;
       font-size: 20px;
     }
@@ -265,23 +261,23 @@ main {
       margin-top: 12px;
 
       input[type="text"] {
-        width: 16%;
+        width: 18%;
         padding: 12px;
         margin-right: 2px;
-        border:1px solid #cecece;
+        border: 1px solid #cecece;
         border-radius: 4px;
         font-size: 16px;
       }
-      
+
       input[type="email"] {
-        width: 16%;
+        width: 18%;
         padding: 12px;
         margin-left: 2px;
-        border:1px solid #cecece;
+        border: 1px solid #cecece;
         border-radius: 4px;
         font-size: 16px;
       }
-      
+
       textarea {
         display: block;
         margin: auto;
@@ -289,7 +285,7 @@ main {
         width: 470px;
         height: 150px;
         padding: 10px 20px;
-        border:1px solid #cecece;
+        border: 1px solid #cecece;
         border-radius: 4px;
         font-size: 16px;
       }
@@ -308,7 +304,7 @@ main {
         opacity: 0.8;
       }
 
-      input[type="submit"]:hover{
+      input[type="submit"]:hover {
         opacity: 1;
       }
     }
@@ -324,5 +320,143 @@ footer {
     font-size: 12px;
     font-weight: 700;
     padding: 36px 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  body {
+    max-width: 425px;
+  }
+
+  header {
+    .navbar {
+      padding: 0px 24px;
+
+      li {
+        display: none;
+      }
+
+      .botao-entrar {
+        display: block;
+        font-size: 12px;
+      }
+    }
+
+    .banner {
+      background-size: 100% 100%;
+      padding: 0px 24px;
+
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  main {
+    .sobre {
+      flex-direction: column;
+      padding: 0 24px;
+      align-items: center;
+      gap: 48px;
+      text-align: center;
+    }
+
+    .planos-precos {
+      padding: 0 24px;
+
+      .lista-planos {
+        flex-direction: column;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .dominio {
+      padding: 48px 24px;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      input[type="submit"] {
+        padding: 10px 18px;
+        font-size: 14px;
+        opacity: 1;
+      }
+    }
+
+    .mensagem {
+      padding: 0 24px;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input[type="text"] {
+          display: block;
+          width: 100%;
+          margin-top: 12px;
+        }
+
+        input[type="email"] {
+          display: block;
+          width: 100%;
+          margin-top: 12px;
+        }
+
+        textarea {
+          width: 100%;
+        }
+
+        input[type="submit"] {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    max-width: 768px;
+
+    .mensagem {
+      form {
+        input[type="text"] {
+          width: 34%;
+
+        }
+        input[type="email"] {
+          width: 34%;
+        }
+      }
+
+    }
   }
 }
